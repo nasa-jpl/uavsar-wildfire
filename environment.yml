@@ -1,0 +1,25 @@
+name: classification
+channels:
+ - conda-forge
+dependencies:
+ - python
+ - pip
+ - affine
+ - fiona
+ - gdal
+ - geopandas
+ - jinja2
+ - joblib
+ - jupyter
+ - matplotlib
+ - numpy
+ - pytest
+ - rasterio
+ - setuptools
+ - setuptools_scm
+ - shapely
+ - tqdm
+ - scikit-learn
+ - scikit-image
+ - seaborn
+ - pytorch
