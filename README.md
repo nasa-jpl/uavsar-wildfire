@@ -1,4 +1,6 @@
 # uavsar_wildfire_classification
+[![DOI](https://zenodo.org/badge/797474411.svg)](https://zenodo.org/doi/10.5281/zenodo.11406530)
+
 This product uses UAVSAR polarimetric data to generate **fire perimeter** and **burn severity** mappings. Specifically, HV polarization backscatter is used. 
 
 Please apply radiometric terrain correction (RTC) to the raw UAVSAR prior to using this product. And generate a HDR environment for the incidence angle data. Both can be performed by following the [radiometric_terrain_correction](https://github.jpl.nasa.gov/UAVSAR-Fire-Research/radiometric_terrain_correction) repository.
