@@ -7,6 +7,9 @@ Before using this tool, apply radiometric terrain correction (RTC) to the UAVSAR
 
 Ensure conda is set up prior to use. If not, mambaforge can be installed [here](https://github.com/conda-forge/miniforge#mambaforge), or conda can be installed [here](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
 
+## **Alternatively** 
+You can follow the steps within the README.md provided within `Docker_for_UAVSAR` folder to build an image that imports all of the necessary packages for the notebooks and opens a port for you to interact with through your browser.
+
 ## Setup (Mac)
 1. Open terminal.
 2. Clone this repository: 
