@@ -8,3 +8,14 @@ scipy
 pandas
 scikit-image
 gdal
+affine
+fiona
+jinja2
+joblib
+jupyter
+pytest
+setuptools
+setuptools_scm
+tqdm
+seaborn
+torch
