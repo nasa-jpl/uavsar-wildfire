@@ -45,7 +45,9 @@ jobs:
     #     pip install pygdal==$(gdal-config --version).* --global-option=build_ext --global-option="-I$(gdal-config --cflags | sed -e 's/-I//g')" --global-option="-L$(gdal-config --libs | sed -e 's/-L//g')"
     #     pip install -r requirements.txt
     - name: Run Jupyter notebook
-      run: jupyter execute crop_image.pynb
+      run: 
+        source activate classification
+        jupyter execute crop_image.pynb
       shell: bash
     # - name: Lint with flake8
     #   run: |
