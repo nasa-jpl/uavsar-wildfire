@@ -46,6 +46,7 @@ jobs:
     #     pip install -r requirements.txt
     - name: Run Jupyter notebook
       run: 
+        conda init
         conda activate classification
         jupyter execute crop_image.pynb
       shell: bash
