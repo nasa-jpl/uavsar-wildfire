@@ -23,9 +23,19 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: "3.9.21"
-    - name: Install dependencies
+    # - name: Install dependencies
+    #   run: |
+    #     python -m pip install --upgrade pip
+    #     pip install -r requirements.txt
+    - name: Install GDAL dependencies
       run: |
-        python -m pip install --upgrade pip
+        sudo apt-get update
+        sudo apt-get install -y gdal-bin libgdal-dev
+
+    - name: Install Python dependencies
+      run: |
+        pip install --upgrade pip
+        pip install pygdal==$(gdal-config --version).* --global-option=build_ext --global-option="-I$(gdal-config --cflags | sed -e 's/-I//g')" --global-option="-L$(gdal-config --libs | sed -e 's/-L//g')"
         pip install -r requirements.txt
     - name: Run Jupyter notebook
       run: jupyter execute crop_image.pynb
