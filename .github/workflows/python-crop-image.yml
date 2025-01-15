@@ -46,7 +46,7 @@ jobs:
     #     pip install -r requirements.txt
     - name: Run Jupyter notebook
       run: 
-        source activate classification
+        conda activate classification
         jupyter execute crop_image.pynb
       shell: bash
     # - name: Lint with flake8
